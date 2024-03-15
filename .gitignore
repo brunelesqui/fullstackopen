@@ -1,1 +1,10 @@
-"# ignore:"
+/part2
+
+/part1/node_modules
+/part1/public
+/part1/.eslintrc.cjs
+/part1/.gitignore
+/part1/index.html
+/part1/*.json
+/part1/README.md
+/part1/vite.config.js
