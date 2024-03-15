@@ -1,0 +1,10 @@
+sequenceDiagram
+	participant browser
+	participant server
+
+	Note right of browser: Create note and push in array and executing redrawNotes code that load notes in ul element
+
+	browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+	browser->>server: { "content": "content", "date": "date" }
+
+	
