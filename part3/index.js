@@ -145,7 +145,7 @@ app.listen(PORT, () => {
 */
 
 const SERVER_NAME = 'Phonebook'
-const PORT = process.env.PORT || 3001 // Variable de entorno 
+const PORT = process.env.PORT || 3001 
 app.listen(PORT, () => {
   console.log(`${SERVER_NAME} Server running on port ${PORT}`)
 })
