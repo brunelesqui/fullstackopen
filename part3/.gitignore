@@ -1,0 +1,6 @@
+bad_person.json
+person.json
+*.bat
+header
+
+node_modules
