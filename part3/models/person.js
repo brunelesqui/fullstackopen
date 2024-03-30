@@ -16,7 +16,7 @@ const schema = new mongoose.Schema({
 	name: String,
 	number: String,
 })
-*/
+
 
 const schema = new mongoose.Schema({
 	name: {
@@ -28,6 +28,26 @@ const schema = new mongoose.Schema({
 		type: String,
 		minLength: 7,
 		required: true
+	}
+})
+*/
+
+const schema = new mongoose.Schema({
+	name: {
+		type: String,
+		minLength: 3,
+		required: [true, 'Name required']
+	},
+	number: {
+		type: String,
+		minLength: 8,
+		required: [true, 'Phone number required'],
+		validate: {
+			validator: function(v) {
+				return /\d{2}-\d{8}/.test(v)
+			},
+			message: props => `${props} is not a valid number!`
+		}
 	}
 })
 

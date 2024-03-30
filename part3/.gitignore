@@ -3,12 +3,10 @@ person.json
 copy_package.json
 
 *.bat
-
 header
-
 .env
-
 mongoDB.txt
-
+.eslintignore
+.eslintrc.js
 
 node_modules

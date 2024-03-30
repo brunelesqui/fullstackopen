@@ -114,6 +114,11 @@ function App() {
           setAlertType('alert success')
           showMessage(`Added ${newName}`)
         })
+        .catch(error => {
+          console.log(error.response.data.error)
+          setAlertType('alert error')
+          showMessage('An error occurred. See the console')
+        })
     }
 
 /*
