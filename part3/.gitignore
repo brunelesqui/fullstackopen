@@ -1,6 +1,14 @@
 bad_person.json
 person.json
+copy_package.json
+
 *.bat
+
 header
+
+.env
+
+mongoDB.txt
+
 
 node_modules
